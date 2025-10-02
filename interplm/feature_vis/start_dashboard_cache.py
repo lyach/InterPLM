@@ -27,7 +27,8 @@ def add_layer_to_dashboard(
         sae, esm_embeds_dir, aa_metadata_dir, n_shards
     )
 
-    sae_feats = get_random_sample_of_sae_feats(sae=sae, esm_embds_dir=esm_embeds_dir)
+    # sae_feats = get_random_sample_of_sae_feats(sae=sae, esm_embds_dir=esm_embeds_dir) # Modified
+    sae_feats = get_random_sample_of_sae_feats(sae=sae, esm_embds_dir=esm_embeds_dir, n_shards=n_shards)
 
     layer_cache = {}
     layer_cache["ESM_metadata"] = {"esm_model_name": esm_model_name, "layer": layer}
