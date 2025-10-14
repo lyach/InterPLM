@@ -190,4 +190,9 @@ cython_debug/
 !.elasticbeanstalk/*.global.yml
 
 # data directory
-data/
+data/*
+
+# Raw data needed for in vivo variability analysis
+!data/in_vivo_variability/
+!data/in_vivo_variability/raw/
+!data/in_vivo_variability/raw/**
